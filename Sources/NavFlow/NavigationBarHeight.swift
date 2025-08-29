@@ -10,12 +10,12 @@ import UIKit
 #endif
 import CoreGraphics
 
-protocol NavigationBarHeight {
+public protocol NavigationBarHeight {
     var value: CGFloat { get set }
 }
 
-struct StandardNavigationHeight: NavigationBarHeight {
-    var value: CGFloat
+public struct StandardNavigationHeight: NavigationBarHeight {
+    public var value: CGFloat
     
     init() {
         self.value = Self.getNavigationBarHeight()
@@ -43,10 +43,10 @@ struct StandardNavigationHeight: NavigationBarHeight {
     }
 }
 
-struct DynamicNavigationHeight: NavigationBarHeight {
-    var value: CGFloat
+public struct DynamicNavigationHeight: NavigationBarHeight {
+    public var value: CGFloat
     
-    init(value: CGFloat) {
+    public init(value: CGFloat) {
         self.value = value
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavFlowNavigationSheetLink<Label: View, Destination: View, NavigationBarView: View>: View {
+public struct NavFlowNavigationSheetLink<Label: View, Destination: View, NavigationBarView: View>: View {
     
     let destination: Destination
     let label: Label
@@ -15,7 +15,7 @@ struct NavFlowNavigationSheetLink<Label: View, Destination: View, NavigationBarV
     let color: Color
     @State private var isPresenting: Bool = false
     
-    init(color: Color,
+    public init(color: Color,
         @ViewBuilder navigationBarView: () -> NavigationBarView,
          destination: Destination,
          @ViewBuilder label: () -> Label) {
@@ -25,7 +25,7 @@ struct NavFlowNavigationSheetLink<Label: View, Destination: View, NavigationBarV
         self.color = color
     }
     
-    var body: some View {
+    public var body: some View {
         Button {
             isPresenting = true
         } label: {

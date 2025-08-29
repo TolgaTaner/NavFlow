@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct NavFlowNavigationContainerView<NavigationBarView: View, Content: View>: View {
+public struct NavFlowNavigationContainerView<NavigationBarView: View, Content: View>: View {
     
     let navigationBarView: NavigationBarView
     let content: Content
     let backgroundColor: Color
     let height: NavigationBarHeight
     
-    init(backgroundColor: Color,
+    public init(backgroundColor: Color,
          height: NavigationBarHeight,
          @ViewBuilder navigationBarView: () -> NavigationBarView,
          @ViewBuilder content: () -> Content) {
@@ -24,7 +24,7 @@ struct NavFlowNavigationContainerView<NavigationBarView: View, Content: View>: V
         self.height = height
     }
     
-    var body: some View {
+    public var body: some View {
         NavFlowNavigationBarView(backgroundColor: backgroundColor, navigationBarHeight: height, navigationBarView: { navigationBarView }) {
             ZStack {
                 Color.clear

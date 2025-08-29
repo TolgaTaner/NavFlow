@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct NavFlowNavigationPushLink<Label: View, Destination: View, NavigationBarView: View>: View {
+public struct NavFlowNavigationPushLink<Label: View, Destination: View, NavigationBarView: View>: View {
     
     let destination: Destination
     let label: Label
     let navigationBarView: NavigationBarView
     let color: Color
     
-    init(color: Color,
+    public init(color: Color,
         @ViewBuilder navigationBarView: () -> NavigationBarView,
          destination: Destination,
          @ViewBuilder label: () -> Label) {
@@ -24,7 +24,7 @@ struct NavFlowNavigationPushLink<Label: View, Destination: View, NavigationBarVi
         self.color = color
     }
     
-    var body: some View {
+    public var body: some View {
         NavigationLink {
             NavFlowNavigationContainerView(backgroundColor: color, height: StandardNavigationHeight(), navigationBarView: { navigationBarView }) {
                 destination
