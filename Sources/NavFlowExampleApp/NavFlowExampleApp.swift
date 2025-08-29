@@ -53,10 +53,8 @@ struct ExampleDetailView: View {
     var body: some View {
         List {
             ForEach(0..<20, id: \.self) { index in
-                Text("Row #\\(index)")
+                Text("Row #\(index)")
             }
         }
     }
 }
-
-

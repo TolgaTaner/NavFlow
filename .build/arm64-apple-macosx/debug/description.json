@@ -155,7 +155,7 @@
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlowExampleApp/main.swift"
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlowExampleApp/NavFlowExampleApp.swift"
         },
         {
           "kind" : "file",
@@ -174,7 +174,7 @@
       "moduleName" : "NavFlowExampleApp",
       "moduleOutputPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules/NavFlowExampleApp.swiftmodule",
       "objects" : [
-        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/main.swift.o"
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/NavFlowExampleApp.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -226,7 +226,7 @@
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/main.swift.o"
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/NavFlowExampleApp.swift.o"
         },
         {
           "kind" : "file",
@@ -235,7 +235,7 @@
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlowExampleApp/main.swift"
+        "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlowExampleApp/NavFlowExampleApp.swift"
       ],
       "tempsPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build",
       "wholeModuleOptimization" : false
@@ -491,7 +491,7 @@
       "navflow",
       "-incremental",
       "-c",
-      "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlowExampleApp/main.swift",
+      "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlowExampleApp/NavFlowExampleApp.swift",
       "-I",
       "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules",
       "-target",
@@ -736,7 +736,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlowExampleApp/main.swift"
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlowExampleApp/NavFlowExampleApp.swift"
         }
       ],
       "outputFilePath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/sources"
@@ -770,7 +770,7 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/main.swift.o"
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/NavFlowExampleApp.swift.o"
         }
       ],
       "outputFilePath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.product/Objects.LinkFileList"
