@@ -14,20 +14,12 @@ let package = Package(
         .library(
             name: "NavFlow",
             targets: ["NavFlow"]),
-        .executable(
-            name: "NavFlowExampleApp",
-            targets: ["NavFlowExampleApp"]
-        ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "NavFlow"),
-        .executableTarget(
-            name: "NavFlowExampleApp",
-            dependencies: ["NavFlow"]
-        ),
         .testTarget(
             name: "NavFlowTests",
             dependencies: ["NavFlow"]
