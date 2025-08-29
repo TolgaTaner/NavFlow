@@ -1,0 +1,2 @@
+*.swift linguist-language=Swift
+Makefile linguist-detectable=false
