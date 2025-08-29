@@ -1,0 +1,4 @@
+module NavFlow {
+    header "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlow-Swift.h"
+    requires objc
+}

@@ -1,0 +1,650 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.xctest/Contents/MacOS/NavFlowPackageTests",
+      "packagePath" : "/Users/tolgataner/Desktop/apps/NavFlow",
+      "productName" : "NavFlowPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.NavFlow-arm64-apple-macosx14.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/sources",
+      "importPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationContainerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationPushLink.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationSheetLink.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavigationBarHeight.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "NavFlow",
+      "moduleOutputPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules/NavFlow.swiftmodule",
+      "objects" : [
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationBarView.swift.o",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationContainerView.swift.o",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationPushLink.swift.o",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationSheetLink.swift.o",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavigationBarHeight.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-v",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlow-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "navflow"
+      ],
+      "outputFileMapPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationContainerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationPushLink.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationSheetLink.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavigationBarHeight.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules/NavFlow.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationBarView.swift",
+        "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationContainerView.swift",
+        "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationPushLink.swift",
+        "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationSheetLink.swift",
+        "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavigationBarHeight.swift"
+      ],
+      "tempsPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.NavFlowPackageTests-arm64-apple-macosx14.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/sources",
+      "importPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules/NavFlowTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "NavFlowPackageTests",
+      "moduleOutputPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules/NavFlowPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-v",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/NavFlowPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "navflow"
+      ],
+      "outputFileMapPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules/NavFlowPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.NavFlowTests-arm64-apple-macosx14.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowTests.build/sources",
+      "importPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Tests/NavFlowTests/NavFlowTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules/NavFlow.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "NavFlowTests",
+      "moduleOutputPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules/NavFlowTests.swiftmodule",
+      "objects" : [
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowTests.build/NavFlowTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-v",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "navflow"
+      ],
+      "outputFileMapPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowTests.build/NavFlowTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules/NavFlowTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/tolgataner/Desktop/apps/NavFlow/Tests/NavFlowTests/NavFlowTests.swift"
+      ],
+      "tempsPath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "NavFlow" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "NavFlow",
+      "-package-name",
+      "navflow",
+      "-incremental",
+      "-c",
+      "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationBarView.swift",
+      "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationContainerView.swift",
+      "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationPushLink.swift",
+      "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationSheetLink.swift",
+      "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavigationBarHeight.swift",
+      "-I",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-v",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlow-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "navflow",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "NavFlowPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "NavFlowPackageTests",
+      "-package-name",
+      "navflow",
+      "-incremental",
+      "-c",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-v",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/NavFlowPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "navflow",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "NavFlowTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "NavFlowTests",
+      "-package-name",
+      "navflow",
+      "-incremental",
+      "-c",
+      "/Users/tolgataner/Desktop/apps/NavFlow/Tests/NavFlowTests/NavFlowTests.swift",
+      "-I",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-v",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "navflow",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "NavFlow" : [
+
+    ],
+    "NavFlowPackageTests" : [
+      "NavFlowTests",
+      "NavFlow"
+    ],
+    "NavFlowTests" : [
+      "NavFlow"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationContainerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationPushLink.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavFlowNavigationSheetLink.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlow/NavigationBarHeight.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/sources"
+    },
+    "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/sources"
+    },
+    "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationContainerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationPushLink.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavFlowNavigationSheetLink.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlow.build/NavigationBarHeight.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowTests.build/NavFlowTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/tolgataner/Desktop/apps/NavFlow/Tests/NavFlowTests/NavFlowTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowTests.build/sources"
+    },
+    "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

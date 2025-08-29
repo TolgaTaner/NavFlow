@@ -1,0 +1,4 @@
+module NavFlowPackageTests {
+    header "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowPackageTests.build/NavFlowPackageTests-Swift.h"
+    requires objc
+}
