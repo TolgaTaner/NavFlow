@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/master.swiftdeps"
+  },
+  "/Users/tolgataner/Desktop/apps/NavFlow/Sources/NavFlowExampleApp/main.swift": {
+    "dependencies": "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/main.d",
+    "object": "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/main.swift.o",
+    "swiftmodule": "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/tolgataner/Desktop/apps/NavFlow/.build/arm64-apple-macosx/debug/NavFlowExampleApp.build/main.swiftdeps"
+  }
+}
