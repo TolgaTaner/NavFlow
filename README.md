@@ -27,104 +27,81 @@ dependencies: [
 ## 🔧 Usage
 
 ```swift
-import SwiftUI
 import NavFlow
+import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        NavFlowNavigationBarView(
-            backgroundColor: .blue,
-            navigationBarHeight: .default,
-            navigationBarView: {
-                Text("Custom Navigation Bar")
-                    .font(.headline)
-                    .padding()
-            },
-            content: {
-                VStack {
-                    Text("Main Content")
-                }
-            }
-        )
-    }
-}
-```
+ @State private var navigationPath = NavigationPath()
 
-### With NavigationPath and Destinations
-You can pass a **NavigationPath** binding and register destinations dynamically:
-
-```swift
-import SwiftUI
-import NavFlow
-
-struct Item: Hashable, Identifiable {
-    let id = UUID()
-    let title: String
-}
-
-struct ContentView: View {
-    @State private var path = NavigationPath()
-    
-    var body: some View {
-        NavFlowNavigationBarView(
-            path: $path,
-            backgroundColor: .purple,
-            navigationBarHeight: .custom(80),
-            navigationBarView: {
-                Text("Custom Nav Bar")
-                    .font(.title2)
-                    .padding()
-            },
-            content: {
-                List {
-                    NavigationLink(value: Item(title: "Hello")) {
-                        Text("Go to Item")
-                    }
-                }
-            },
-            registerDestinations: { base in
-                base
-                    .navigationDestination(for: Item.self) { item in
-                        Text("Detail: \(item.title)")
-                    }
-            }
-        )
-    }
+ var body: some View {
+     NavFlowNavigationBarView(
+         path: $navigationPath,
+         backgroundColor: .blue,
+         navigationBarHeight: StandardNavigationHeight()
+     ) {
+        /// Custom View For Navigation Bar
+         HStack {
+             Text("Back").foregroundColor(.white)
+             Spacer()
+             Text("Home").bold().foregroundColor(.white)
+             Spacer()
+             Button("Edit") { /* action */ }.foregroundColor(.white)
+         }
+     } content: {
+         VStack {
+             Text("Main content here")
+                 .padding()
+         }
+     }
+ }
 }
 ```
 
 ## Push Navigation
 
 ```swift
-NavFlowNavigationPushLink(
-    color: .blue,
-    navigationBarView: {
-        Text("Detail Page")
-            .font(.headline)
-            .padding()
-    },
-    destination: Text("Destination View"),
-    label: {
-        Text("Go to Detail")
-            .foregroundColor(.blue)
+import SwiftUI
+import NavFlow
+
+struct PushExampleView: View {
+    var body: some View {
+        NavFlowNavigationPushLink(
+            color: .blue,
+            navigationHeight: StandardNavigationHeight(),
+            navigationBarView: {
+                HStack {
+                    Text("Custom Nav")
+                        .bold()
+                        .foregroundColor(.white)
+                    Spacer()
+                    Button("Action") { /* do something */ }
+                        .foregroundColor(.white)
+                }
+            },
+            destination: Text("Destination Page")
+        ) {
+            Text("Go to Destination")
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(8)
+        }
     }
-)
+}
 ```
 ## Sheet Navigation
 ```swift
 NavFlowNavigationSheetLink(
-    color: .red,
+    color: .purple,
     navigationBarView: {
-        Text("Sheet Title")
-            .font(.headline)
-            .padding()
+        Text("Sheet View").foregroundColor(.white)
     },
-    destination: Text("Sheet Content"),
-    label: {
-        Text("Open Sheet")
-            .foregroundColor(.red)
-    }
-)
+    destination: Text("This is a sheet")
+) {
+    Text("Open Sheet")
+        .padding()
+        .background(Color.gray.opacity(0.2))
+        .cornerRadius(8)
+}
 ```
 ## 📏 Navigation Bar Height
 
