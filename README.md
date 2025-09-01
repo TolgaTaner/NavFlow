@@ -140,7 +140,7 @@ let customHeight = DynamicNavigationHeight(value: 100)
 ```
 
 🛠 Requirements
-iOS 15+
+iOS 16+
 Swift 5.9+
 
 📄 License
