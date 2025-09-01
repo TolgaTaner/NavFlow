@@ -32,18 +32,61 @@ import NavFlow
 
 struct ContentView: View {
     var body: some View {
-        NavFlowNavigationContainerView(
+        NavFlowNavigationBarView(
             backgroundColor: .blue,
-            height: StandardNavigationHeight(),
+            navigationBarHeight: .default,
             navigationBarView: {
-                Text("My Custom Navigation Bar")
+                Text("Custom Navigation Bar")
                     .font(.headline)
                     .padding()
             },
             content: {
                 VStack {
-                    Text("Hello, World!")
+                    Text("Main Content")
                 }
+            }
+        )
+    }
+}
+```
+
+### With NavigationPath and Destinations
+You can pass a **NavigationPath** binding and register destinations dynamically:
+
+```swift
+import SwiftUI
+import NavFlow
+
+struct Item: Hashable, Identifiable {
+    let id = UUID()
+    let title: String
+}
+
+struct ContentView: View {
+    @State private var path = NavigationPath()
+    
+    var body: some View {
+        NavFlowNavigationBarView(
+            path: $path,
+            backgroundColor: .purple,
+            navigationBarHeight: .custom(80),
+            navigationBarView: {
+                Text("Custom Nav Bar")
+                    .font(.title2)
+                    .padding()
+            },
+            content: {
+                List {
+                    NavigationLink(value: Item(title: "Hello")) {
+                        Text("Go to Item")
+                    }
+                }
+            },
+            registerDestinations: { base in
+                base
+                    .navigationDestination(for: Item.self) { item in
+                        Text("Detail: \(item.title)")
+                    }
             }
         )
     }
