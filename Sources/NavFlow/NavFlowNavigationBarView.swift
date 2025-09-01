@@ -34,23 +34,7 @@ public struct NavFlowNavigationBarView<NavigationBarView: View, Content: View>: 
         Group {
             if let path {
                 NavigationStack(path: path) {
-                    let base = AnyView(
-                        VStack(spacing: 0) {
-                            navigationBarView
-                                .foregroundStyle(.white)
-                                .frame(height: navigationBarHeight.value)
-                                .frame(maxWidth: .infinity)
-                                .background(
-                                    backgroundColor.ignoresSafeArea(edges: .top)
-                                )
-                            ZStack {
-                                Color.clear
-                                    .ignoresSafeArea()
-                                content
-                            }
-                        }
-                        .navigationBarBackButtonHidden(true)
-                    )
+                    let base = AnyView(buildStackContent())
                     if let registerDestinations {
                         registerDestinations(base)
                     } else {
@@ -59,23 +43,27 @@ public struct NavFlowNavigationBarView<NavigationBarView: View, Content: View>: 
                 }
             } else {
                 NavigationStack {
-                    VStack(spacing: 0) {
-                        navigationBarView
-                            .foregroundStyle(.white)
-                            .frame(height: navigationBarHeight.value)
-                            .frame(maxWidth: .infinity)
-                            .background(
-                                backgroundColor.ignoresSafeArea(edges: .top)
-                            )
-                        ZStack {
-                            Color.clear
-                                .ignoresSafeArea()
-                            content
-                        }
-                    }
-                    .navigationBarBackButtonHidden(true)
+                    buildStackContent()
                 }
             }
         }
+    }
+
+    private func buildStackContent() -> some View {
+        VStack(spacing: 0) {
+            navigationBarView
+                .foregroundStyle(.white)
+                .frame(height: navigationBarHeight.value)
+                .frame(maxWidth: .infinity)
+                .background(
+                    backgroundColor.ignoresSafeArea(edges: .top)
+                )
+            ZStack {
+                Color.clear
+                    .ignoresSafeArea()
+                content
+            }
+        }
+        .navigationBarBackButtonHidden(true)
     }
 }
