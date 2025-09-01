@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavFlowNavigationBarView<NavigationBarView: View, Content: View>: View {
+public struct NavFlowNavigationBarView<NavigationBarView: View, Content: View>: View {
     
     let navigationBarView: NavigationBarView
     let content: Content
@@ -16,7 +16,7 @@ struct NavFlowNavigationBarView<NavigationBarView: View, Content: View>: View {
     private let path: Binding<NavigationPath>?
     private let registerDestinations: ((AnyView) -> AnyView)?
     
-    init(path: Binding<NavigationPath>? = nil,
+    public init(path: Binding<NavigationPath>? = nil,
          backgroundColor: Color,
          navigationBarHeight: NavigationBarHeight,
          @ViewBuilder navigationBarView: () -> NavigationBarView,
@@ -30,7 +30,7 @@ struct NavFlowNavigationBarView<NavigationBarView: View, Content: View>: View {
         self.registerDestinations = registerDestinations
     }
     
-    var body: some View {
+    public var body: some View {
         Group {
             if let path {
                 NavigationStack(path: path) {
@@ -43,7 +43,11 @@ struct NavFlowNavigationBarView<NavigationBarView: View, Content: View>: View {
                                 .background(
                                     backgroundColor.ignoresSafeArea(edges: .top)
                                 )
-                            content
+                            ZStack {
+                                Color.clear
+                                    .ignoresSafeArea()
+                                content
+                            }
                         }
                         .navigationBarBackButtonHidden(true)
                     )
@@ -63,7 +67,11 @@ struct NavFlowNavigationBarView<NavigationBarView: View, Content: View>: View {
                             .background(
                                 backgroundColor.ignoresSafeArea(edges: .top)
                             )
-                        content
+                        ZStack {
+                            Color.clear
+                                .ignoresSafeArea()
+                            content
+                        }
                     }
                     .navigationBarBackButtonHidden(true)
                 }
