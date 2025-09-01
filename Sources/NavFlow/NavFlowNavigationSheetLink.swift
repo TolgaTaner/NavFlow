@@ -32,9 +32,21 @@ public struct NavFlowNavigationSheetLink<Label: View, Destination: View, Navigat
             label
         }
         .sheet(isPresented: $isPresenting) {
-            NavFlowNavigationContainerView(backgroundColor: color, height: StandardNavigationHeight(), navigationBarView: { navigationBarView }) {
-                destination
+            ZStack(alignment: .top) {
+                Color.clear
+                    .ignoresSafeArea()
+                VStack(spacing: 0) {
+                    navigationBarView
+                        .frame(height: StandardNavigationHeight().value)
+                        .frame(maxWidth: .infinity)
+                        .background(
+                            color.ignoresSafeArea(edges: .top)
+                        )
+                    destination
+                }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .navigationBarBackButtonHidden(true)
         }
     }
 }
