@@ -13,30 +13,61 @@ struct NavFlowNavigationBarView<NavigationBarView: View, Content: View>: View {
     let content: Content
     private let navigationBarHeight: NavigationBarHeight
     private let backgroundColor: Color
+    private let path: Binding<NavigationPath>?
+    private let registerDestinations: ((AnyView) -> AnyView)?
     
-    init(backgroundColor: Color,
+    init(path: Binding<NavigationPath>? = nil,
+         backgroundColor: Color,
          navigationBarHeight: NavigationBarHeight,
          @ViewBuilder navigationBarView: () -> NavigationBarView,
-         @ViewBuilder content: () -> Content) {
+         @ViewBuilder content: () -> Content,
+         registerDestinations: ((AnyView) -> AnyView)? = nil) {
         self.navigationBarView = navigationBarView()
         self.content = content()
         self.backgroundColor = backgroundColor
         self.navigationBarHeight = navigationBarHeight
+        self.path = path
+        self.registerDestinations = registerDestinations
     }
     
     var body: some View {
-        NavigationStack {
-            VStack(spacing: 0) {
-                navigationBarView
-                    .foregroundStyle(.white)
-                    .frame(height: navigationBarHeight.value)
-                    .frame(maxWidth: .infinity)
-                    .background(
-                        backgroundColor.ignoresSafeArea(edges: .top)
+        Group {
+            if let path {
+                NavigationStack(path: path) {
+                    let base = AnyView(
+                        VStack(spacing: 0) {
+                            navigationBarView
+                                .foregroundStyle(.white)
+                                .frame(height: navigationBarHeight.value)
+                                .frame(maxWidth: .infinity)
+                                .background(
+                                    backgroundColor.ignoresSafeArea(edges: .top)
+                                )
+                            content
+                        }
+                        .navigationBarBackButtonHidden(true)
                     )
-                content
-                
-            }.navigationBarBackButtonHidden(true)
+                    if let registerDestinations {
+                        registerDestinations(base)
+                    } else {
+                        base
+                    }
+                }
+            } else {
+                NavigationStack {
+                    VStack(spacing: 0) {
+                        navigationBarView
+                            .foregroundStyle(.white)
+                            .frame(height: navigationBarHeight.value)
+                            .frame(maxWidth: .infinity)
+                            .background(
+                                backgroundColor.ignoresSafeArea(edges: .top)
+                            )
+                        content
+                    }
+                    .navigationBarBackButtonHidden(true)
+                }
+            }
         }
     }
 }

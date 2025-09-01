@@ -13,24 +13,35 @@ public struct NavFlowNavigationContainerView<NavigationBarView: View, Content: V
     let content: Content
     let backgroundColor: Color
     let height: NavigationBarHeight
+    let path: Binding<NavigationPath>?
+    let registerDestinations: ((AnyView) -> AnyView)?
     
-    public init(backgroundColor: Color,
+    public init(path: Binding<NavigationPath>? = nil,
+         backgroundColor: Color,
          height: NavigationBarHeight,
          @ViewBuilder navigationBarView: () -> NavigationBarView,
-         @ViewBuilder content: () -> Content) {
+         @ViewBuilder content: () -> Content,
+         registerDestinations: ((AnyView) -> AnyView)? = nil) {
         self.navigationBarView = navigationBarView()
         self.content = content()
         self.backgroundColor = backgroundColor
         self.height = height
+        self.path = path
+        self.registerDestinations = registerDestinations
     }
     
     public var body: some View {
-        NavFlowNavigationBarView(backgroundColor: backgroundColor, navigationBarHeight: height, navigationBarView: { navigationBarView }) {
+        NavFlowNavigationBarView(path: path,
+                                 backgroundColor: backgroundColor,
+                                 navigationBarHeight: height,
+                                 navigationBarView: { navigationBarView },
+                                 content: {
             ZStack {
                 Color.clear
                     .ignoresSafeArea()
                 content
             }
-        }
+        },
+                                 registerDestinations: registerDestinations)
     }
 }
