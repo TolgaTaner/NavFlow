@@ -21,7 +21,7 @@ https://github.com/TolgaTaner/NavFlow.git
 Or add it directly to your **Package.swift:**
 ```swift
 dependencies: [
-    .package(url: "https://github.com/TolgaTaner/NavFlow.git", from: "1.1.3")
+    .package(url: "https://github.com/TolgaTaner/NavFlow.git", from: "1.1.4")
 ]
 ```
 ## 🔧 Usage
