@@ -14,8 +14,10 @@ public struct NavFlowNavigationSheetLink<Label: View, Destination: View, Navigat
     let navigationBarView: NavigationBarView
     let color: Color
     @State private var isPresenting: Bool = false
+    let height: NavigationBarHeight
     
     public init(color: Color,
+                navigationHeight: NavigationBarHeight = StandardNavigationHeight(),
         @ViewBuilder navigationBarView: () -> NavigationBarView,
          destination: Destination,
          @ViewBuilder label: () -> Label) {
@@ -23,6 +25,7 @@ public struct NavFlowNavigationSheetLink<Label: View, Destination: View, Navigat
         self.destination = destination
         self.label = label()
         self.color = color
+        self.height = navigationHeight
     }
     
     public var body: some View {
@@ -37,7 +40,7 @@ public struct NavFlowNavigationSheetLink<Label: View, Destination: View, Navigat
                     .ignoresSafeArea()
                 VStack(spacing: 0) {
                     navigationBarView
-                        .frame(height: StandardNavigationHeight().value)
+                        .frame(height: height.value)
                         .frame(maxWidth: .infinity)
                         .background(
                             color.ignoresSafeArea(edges: .top)

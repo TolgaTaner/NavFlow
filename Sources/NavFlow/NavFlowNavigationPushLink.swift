@@ -13,8 +13,10 @@ public struct NavFlowNavigationPushLink<Label: View, Destination: View, Navigati
     let label: Label
     let navigationBarView: NavigationBarView
     let color: Color
+    let height: NavigationBarHeight
     
     public init(color: Color,
+                navigationHeight: NavigationBarHeight = StandardNavigationHeight(),
         @ViewBuilder navigationBarView: () -> NavigationBarView,
          destination: Destination,
          @ViewBuilder label: () -> Label) {
@@ -22,6 +24,7 @@ public struct NavFlowNavigationPushLink<Label: View, Destination: View, Navigati
         self.destination = destination
         self.label = label()
         self.color = color
+        self.height = navigationHeight
     }
     
     public var body: some View {
@@ -31,7 +34,7 @@ public struct NavFlowNavigationPushLink<Label: View, Destination: View, Navigati
                     .ignoresSafeArea()
                 VStack(spacing: 0) {
                     navigationBarView
-                        .frame(height: StandardNavigationHeight().value)
+                        .frame(height: height.value)
                         .frame(maxWidth: .infinity)
                         .background(
                             color.ignoresSafeArea(edges: .top)
