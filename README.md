@@ -11,7 +11,6 @@
   <img src="https://github.com/user-attachments/assets/315235be-ab5e-4b55-b7c7-f47502b30ea8" alt="Screenshot 4" width="180" />
   <img src="https://github.com/user-attachments/assets/e3251ac2-4bf8-417f-aac8-83c4402fccc0" alt="Screenshot 2" width="180" />
   <img width="180" src="https://github.com/user-attachments/assets/b9063730-1325-48ef-8bff-ee3fdfe3a68f" alt="Screenshot 5" />
-
 </p>
 
 
@@ -34,7 +33,7 @@ https://github.com/TolgaTaner/NavFlow.git
 Or add it directly to your **Package.swift:**
 ```swift
 dependencies: [
-    .package(url: "https://github.com/TolgaTaner/NavFlow.git", from: "1.2.2")
+    .package(url: "https://github.com/TolgaTaner/NavFlow.git", from: "1.2.3")
 ]
 ```
 ## 🔧 Usage
@@ -129,6 +128,19 @@ let height = StandardNavigationHeight()
 let customHeight = DynamicNavigationHeight(value: 100)
 ```
 
+### Hiding Navigation Bar:
+
+If you want, you can hide navigation bar, but you can still use its features.
+
+```swift
+NavFlowNavigationBarView(
+    backgroundColor: .black,
+    navigationBarHeight: StandardNavigationHeight(),
+    navigationBarView: { CustomBar() },
+    content: { OnboardingView() }
+)
+.hideNavFlowNavigationBar()
+```
 🛠 Requirements
 iOS 16+
 Swift 5.9+
