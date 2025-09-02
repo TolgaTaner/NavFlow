@@ -14,7 +14,6 @@ public protocol NavigationBarHeight {
     var value: CGFloat { get set }
 }
 
-@MainActor
 public struct StandardNavigationHeight: NavigationBarHeight {
     public var value: CGFloat
     
