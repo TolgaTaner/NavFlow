@@ -1,6 +1,6 @@
 # NavFlow
 
-**NavFlow** is a Swift Package that provides customizable navigation containers and navigation bars for SwiftUI applications. You can easily add your own navigation bar view and use it with either **push** or **sheet** navigation flows.
+**NavFlow** is a Swift Package that provides customizable navigation containers and navigation bars for SwiftUI applications. You can easily create your view a navigation bar and use it with either **push** or **sheet** navigation flows.
 
 ## Overview
 
